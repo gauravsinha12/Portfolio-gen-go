@@ -1,4 +1,4 @@
-# project
+# Go portfolio Static Gen
 
 ## Description
 
