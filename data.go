@@ -20,6 +20,7 @@ type Post struct {
 	Date        string
 	Slug        string
 	Content     template.HTML
+	Header_image string
 }
 
 // Project represents a project
@@ -129,6 +130,8 @@ func parsePost(header, body []string) Post {
 			post.Author = strings.TrimSpace(strings.TrimPrefix(line, "author:"))
 		case strings.Contains(line, "date:"):
 			post.Date = strings.TrimSpace(strings.TrimPrefix(line, "date:"))
+		case strings.Contains(line, "header_image:"):
+			post.Header_image = strings.TrimSpace(strings.TrimPrefix(line,"header_image:"))
 		}
 	}
 	return post
