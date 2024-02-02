@@ -78,7 +78,7 @@ func main() {
 		return c.File(fmt.Sprintf("%s/page%d.html", publicProjectsDir, page))
 	})
 
-	if err := e.Start(":8000"); err != nil {
+	if err := e.Start(":4568"); err != nil {
 		log.Fatal(err)
 	}
 }
