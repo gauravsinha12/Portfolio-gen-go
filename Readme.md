@@ -11,7 +11,7 @@ To install the project, you need to have Go and npm installed on your machine. O
 ```sh
 go mod download
 ```
-## How to use
+## How to use it
 
 To use the project, you need to have Go and npm installed on your machine. Once you have these prerequisites, you can clone the repository and install the dependencies:
 
